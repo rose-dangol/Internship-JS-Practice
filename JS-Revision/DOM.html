@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <style>
+            body{
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body id="bakground">
+        <button id="btn">Change the Color!!</button>
+    </body>
+    <script>
+        let button = document.getElementById('btn')
+        button.addEventListener("click",function(){
+            document.getElementById("bakground").style.backgroundColor= "blue";
+        })
+    </script>
+
+</html>

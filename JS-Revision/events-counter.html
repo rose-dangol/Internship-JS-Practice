@@ -1,0 +1,22 @@
+<html>
+    <head><title>Counter</title></head>
+    <body>
+        <button onclick="inc()" >+</button>
+        <button onclick="dec()">-</button>
+        <input type="text" id="display" value="0" readonly>
+        <button onclick="reset()">Reset</button>
+    </body>
+    <script>
+        let display = document.getElementById('display')
+
+        function inc(){
+            display.value = Number(display.value) +1 
+        }
+        function dec(){
+            display.value = Number(display.value)-1
+        }
+        function reset(){
+            display.value="0"
+        }
+    </script>
+</html>

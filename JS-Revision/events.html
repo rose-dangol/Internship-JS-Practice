@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <button onclick="display()">Click Me</button>
+        <img src="./download.jpeg" height="100px" id="changeImage">
+        <input type="text" id="display">
+    </body>
+    <script>
+        let img = document.getElementById('changeImage')
+        let displayArea = document.getElementById('display')
+        function display(){
+            alert("you clicked a button")
+        }
+        img.addEventListener('mouseover',function(){
+            img.src="./download (1).jpeg"
+        })
+        img.addEventListener('mouseout',function(){
+            img.src="./download.jpeg"
+        })
+        const userInput = document.createElement('p')
+        displayArea.addEventListener('input',function(){
+            userInput.innerText=displayArea.value
+        })
+        document.body.appendChild(userInput)
+    </script>
+</html>
